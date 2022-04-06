@@ -1,2 +1,92 @@
 /* _hero.scss */
 @use "../abstracts/variables" as *;
+.hero{
+    display:grid;
+  
+
+
+  &__text{
+      padding-inline:2rem;
+  }
+
+    &__title{
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2.93rem;
+       white-space: nowrap;
+       margin-block-end:10px;
+      
+    }
+    &__subtitle{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2.1rem;
+        white-space: nowrap;
+        margin-block-end:10px;
+    }
+    &__description{
+        font-family:'Roboto', sans-serif;
+        font-size: 1.1rem;
+        line-height:21px;
+        position: absolute;
+        
+    }
+
+    &__image{
+        svg {
+        
+            margin-inline-start:75px;
+            margin-block-start: 20%;
+            height: 260px;
+            width: 325px;
+            transform: scale(2.15);
+        }
+
+    }
+
+}
+
+
+//button
+.cta{
+    
+    &__btn{
+        position: absolute;
+        justify-self:center;
+        max-width:260px;
+        width:100%;
+        margin-block-start:6rem;
+        bottom: 10%;
+        align-items: center;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .hero{
+        &__description{
+            max-width: 80ch;
+        }
+        &__image{
+            height: 100%;
+            width:100%
+        }
+    }
+}
+    /* phone 600px and down*/
+    @media only screen and (max-width: 600px) {
+        .hero{
+            &__description{
+                min-width: 35ch;
+            }
+            &__image{
+               width: 430px;
+                overflow: hidden;
+            }
+        }
+    }
