@@ -10,13 +10,13 @@
   }
 
     &__title{
-        font-size: 2.3rem;
+        font-size: 3rem;
         text-transform: uppercase;
         font-weight: 400;
         font-style: normal;
         line-height: 2.93rem;
        white-space: nowrap;
-       margin-block-end:10px;
+       margin-block-end:7px;
       
     }
     &__subtitle{
@@ -25,27 +25,32 @@
         font-style: normal;
         line-height: 2.1rem;
         white-space: nowrap;
-        margin-block-end:10px;
+        margin-block-end:15px;
+        font-size: 36px;
     }
     &__description{
         font-family:'Roboto', sans-serif;
-        font-size: 1.1rem;
-        line-height:21px;
+        font-size: 1.5rem;
+        line-height:30px;
         position: absolute;
-        
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        min-width: 34ch;
     }
-
+//mobile
     &__image{
-        svg {
-        
-            margin-inline-start:75px;
-            margin-block-start: 20%;
-            height: 260px;
-            width: 325px;
-            transform: scale(2.15);
-        }
-
-    }
+    position: relative;
+    background-image: url("../images/hero-image.svg");
+    width:600px;
+    height:500px;
+    transform: scale(1);
+    margin-block-start: 8rem;
+    background-position: -215px;
+ //   background-position-y:center ;
+    //background-position: center;
+    background-repeat: no-repeat;
+    margin-block-end:1.5rem;
 
 }
 
@@ -54,39 +59,54 @@
 .cta{
     
     &__btn{
-        position: absolute;
-        justify-self:center;
-        max-width:260px;
-        width:100%;
-        margin-block-start:6rem;
+        display: flex;
+       // justify-self:center;
+        max-width:400px;
+        width: 100%;
+       // margin-block-start:4rem;
         bottom: 10%;
-        align-items: center;
+        justify-content: center;
+        margin:auto;
+        padding:25px;
+        border-radius: 2rem;
+        background-color: #2B2F47;
+        color:white; 
+        border:#2B2F47;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
     }
+
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px ) */
 @media only screen and (min-width: 768px) {
 
     .hero{
         &__description{
-            max-width: 80ch;
+            max-width: 65ch;
         }
         &__image{
-            height: 100%;
-            width:100%
+            position: relative;
+          
+            margin-block-start: 10%;
+            width:1262px;
+            height:500px;
+            transform: scale(1);
+            margin-inline-start: auto;
+            background-position: 50px;
+    
+        }
+        .cta{
+            &__btn{
+                display: flex;
+                margin:0;
+              justify-content: left;
+           
+            }
         }
     }
 }
-    /* phone 600px and down*/
-    @media only screen and (max-width: 600px) {
-        .hero{
-            &__description{
-                min-width: 35ch;
-            }
-            &__image{
-               width: 430px;
-                overflow: hidden;
-            }
-        }
-    }
+}
