@@ -37,6 +37,7 @@
         font-weight: 400;
         letter-spacing: 0.1px;
         min-width: 34ch;
+    
     }
 //mobile
     &__image{
@@ -66,7 +67,7 @@
         bottom: 10%;
         justify-content: center;
         margin:auto;
-        padding:25px;
+        padding:15px;
         border-radius: 2rem;
         background-color: #2B2F47;
         color:white; 
@@ -76,20 +77,21 @@
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
     }
-
 }
 
 
+
 /* Medium devices (landscape tablets, 768px ) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 560px) {
 
     .hero{
         &__description{
             max-width: 65ch;
+            margin-block-end: 5px;
+            
         }
         &__image{
             position: relative;
-          
             margin-block-start: 10%;
             width:1262px;
             height:500px;
@@ -98,13 +100,21 @@
             background-position: 50px;
     
         }
-        .cta{
-            &__btn{
-                display: flex;
-                margin:0;
-              justify-content: left;
-           
-            }
+        
+    }
+
+    .cta{
+        &__btn{
+
+            position: absolute;
+           // display: flex;
+            margin:0;
+          justify-content: center;
+          text-align: center;
+          margin-inline-start: 30px;
+          margin-block-end: 40px;
+          margin-top: 10px;
+
         }
     }
 }

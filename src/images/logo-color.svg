@@ -5,13 +5,12 @@
  
   }
  
-  @media (prefers-color-scheme:dark){
+  @media(prefers-color-scheme:dark){
    path{
    fill:white;
    opacity: 0.5;
    } 
   }
-  
   </style>
   <path d="M26.2001 12.1L10.1001 17.7" stroke="#AF4FE8" stroke-width="3" stroke-miterlimit="10" />
   <path d="M25.5 11.2V25.2" stroke="#AF4FE8" stroke-width="3" stroke-miterlimit="10" />
