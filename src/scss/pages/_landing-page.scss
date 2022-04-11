@@ -6,6 +6,7 @@
     margin:0;
     padding: 0;
  }
+ 
  body{
     background: rgb(255,0,184);
     background: linear-gradient(0deg, rgba(255,0,184,1) 0%, rgba(178,49,241,1) 100%);
@@ -15,3 +16,15 @@
     color:#FFFF;
  }
  
+ 
+
+   body{
+      background: rgb(255,0,184);
+      background: linear-gradient(0deg, rgba(255,0,184,1) 0%, rgba(178,49,241,1) 100%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Oswald', sans-serif;
+      color:#FFFF;
+   }
+
+
