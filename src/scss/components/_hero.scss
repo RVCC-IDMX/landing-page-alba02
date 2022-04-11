@@ -98,24 +98,29 @@
             transform: scale(1);
             margin-inline-start: auto;
             background-position: 50px;
+            z-index: 1;
     
         }
+
         
     }
-
     .cta{
         &__btn{
 
             position: absolute;
            // display: flex;
-            margin:0;
+           // margin:0;
           justify-content: center;
           text-align: center;
           margin-inline-start: 30px;
-          margin-block-end: 40px;
-          margin-top: 10px;
-
+         // margin-block-end: 40px;
+          margin-top: 50px;
+         // padding-bottom: 2px;
+          z-index: 2;
+          top: 50%;
+          bottom: 30%;
         }
     }
+    
 }
 }
