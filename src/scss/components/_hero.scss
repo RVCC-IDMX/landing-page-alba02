@@ -1,5 +1,8 @@
 /* _hero.scss */
 @use "../abstracts/variables" as *;
+
+@media only screen and (max-width:560) {
+    
 .hero{
     display:grid;
   
@@ -78,7 +81,7 @@
         font-family: 'Roboto', sans-serif;
     }
 }
-
+}
 
 
 /* Medium devices (landscape tablets, 768px ) */
